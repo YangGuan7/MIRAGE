@@ -1,0 +1,135 @@
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* #audioFeedback,
+#poseFeedback, */
+#randomPosFeedback,
+#imageSmallHeartFeedback,
+#encoreFeedback {
+    background-image: url('../img/image/smallHeart.gif');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
+    /* background-color: aqua; */
+    z-index: 2;
+    top: 200px;
+    position: absolute;
+    left: 200px;
+    /* transition:0.5s all; */
+    animation-duration: 3s;
+    animation-name: zoominandout;
+    display: none;
+}
+
+#imageSmallHeartFeedback{
+    width: 200px;
+    height: 250px;
+}
+
+@keyframes zoominandout {
+    from {
+      transform: scale(0);
+      opacity: 1;
+    }
+    
+    75% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    
+    to {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+#fullscreenFeedback {
+    background-image: url('../img/image/bigheart.gif');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    z-index: 2;
+    top: 0;
+    position: absolute;
+    left: 0;
+    /* transition:0.5s all; */
+    animation-duration: 3s;
+    animation-name: fullzoominandout;
+    display: none;
+}
+@keyframes fullzoominandout {
+    from {
+      /* transform: scale(0); */
+      opacity: 0;
+    }
+    
+    75% {
+        /* transform: scale(1); */
+        opacity: 0.8;
+    }
+    
+    to {
+        /* transform: scale(1.1); */
+        opacity: 0;
+    }
+}
+
+
+#captureImg{
+    width: 100%;
+    height: auto;
+    border:10px solid rgba(255, 255, 255, 0.75) ;
+}
+
+/* .test{ */
+#screenshotArea{
+/* #captureImg{ */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    /* background-color: #fff; */
+    transform-origin: 95% 95%;
+    display: none;
+    /* border:10px solid rgba(255, 255, 255, 0.75) ; */
+    backdrop-filter: blur(40px);
+    border-radius: 30px;
+    animation-duration: 5s;
+    animation-name: screenshot;
+    display: none;
+}
+
+@keyframes screenshot {
+    0% {
+        left: 0;
+        transform: scale(1);
+        opacity: 1;
+        filter: brightness(10) blur(10px);
+    }
+    
+    20% {
+        transform: scale(0.2);
+        filter: none;
+    }
+
+    80% {
+        left: 0;
+        opacity: 1;
+        transform: scale(0.2);
+    }
+    
+    100% {
+        left:400px;
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    }
