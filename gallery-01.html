@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-TW">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,400i,600,700|Montserrat:300,400,700|Caveat+Brush&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<!-- Bootstrap Switch CSS -->
+	<link rel="stylesheet" href="css/components/bs-switches.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+ 
+
+	<!-- tittle icon -->
+	<link rel="icon" href="./uploads/feature/squarelogo.png" type="image/x-icon">
+	<!-- Document Title
+	============================================= -->
+	<title>回憶相冊</title>
+
+</head>
+
+<body class="stretched">
+	<div class="bg-color2"></div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<header id="header" class="no-sticky transparent-header dark" data-sticky-shrink="false">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row justify-content-lg-between">
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-lg-0">
+							<a href="gallery.html"><i class="icon-line-chevron-left"></i></a> 2022.06.04 告五人　《你要不要吃哈密瓜》(40)
+						</div><!-- #logo end -->
+						<nav class="primary-menu">
+
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="slider" class="slider-element min-vh-60 dark include-header" style="background: url('uploads/gallery/album01/cover_01.jpg') no-repeat; background-size: cover">
+			<div class="slider-inner">
+				<div class="container">
+
+				</div>
+			</div>
+		</section>
+
+
+		<section>
+			<div class="content-wrap py-3">
+				<div class="container clearfix">
+					<div class="row col-mb-50">
+						<div class="col-md-12">
+							<div class="masonry-thumbs grid-container grid-3" data-lightbox="gallery">
+								<div class="grid-item p-2">
+									<div class="grid-inner">
+										<a href="uploads/gallery/album01/01.jpg" data-lightbox="gallery-item">
+											<img class="rounded-5" src="uploads/gallery/album01/thumb/01.jpg" alt="Gallery Image">
+										</a>
+									</div>
+								</div>
+								<div class="grid-item p-2">
+									<div class="grid-inner">
+										<a href="uploads/gallery/album01/02.png" data-lightbox="gallery-item">
+											<img class="rounded-5" src="uploads/gallery/album01/thumb/02.jpg" alt="Gallery Image">
+										</a>
+									</div>
+								</div>
+								<div class="grid-item p-2">
+									<div class="grid-inner">
+										<a href="uploads/gallery/album01/03.png" data-lightbox="gallery-item">
+											<img class="rounded-5" src="uploads/gallery/album01/thumb/03.jpg" alt="Gallery Image">
+										</a>
+									</div>
+								</div>
+								<div class="grid-item p-2">
+									<div class="grid-inner">
+										<a href="uploads/gallery/album01/04.png" data-lightbox="gallery-item">
+											<img class="rounded-5" src="uploads/gallery/album01/thumb/04.jpg" alt="Gallery Image">
+										</a>
+									</div>
+								</div>
+								<div class="grid-item p-2">
+									<div class="grid-inner">
+										<a href="uploads/gallery/album01/05.png" data-lightbox="gallery-item">
+											<img class="rounded-5" src="uploads/gallery/album01/thumb/05.jpg" alt="Gallery Image">
+										</a>
+									</div>
+								</div>
+								<div class="grid-item p-2">
+									<div class="grid-inner">
+										<a href="uploads/gallery/album01/06.png" data-lightbox="gallery-item">
+											<img class="rounded-5" src="uploads/gallery/album01/thumb/06.jpg" alt="Gallery Image">
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+	<script type="text/javascript">
+		$('.owl-carousel2').owlCarousel({
+			    margin:20,
+			    loop:true,
+			    dots:false,
+			    autoWidth:true,
+			    items:1,
+
+		});
+
+		jQuery().ready(function($) {
+
+		    checkClasses();
+		    $('.owl-carousel2').on('translated.owl.carousel', function(event) {
+		        checkClasses();
+		    });
+
+		    function checkClasses(){
+		        var total = $('.owl-carousel2 .owl-stage .owl-item.active').length;
+		        $('.owl-carousel2 .owl-stage .owl-item').removeClass('active-op');
+
+		        $('.owl-carousel2 .owl-stage .owl-item.active').each(function(index){
+		            if (index === 0) {
+		                $(this).addClass('active-op');
+		            }
+		        });
+		    }
+
+
+		});
+		
+
+		 
+	</script>
+
+
+</body>
+</html>

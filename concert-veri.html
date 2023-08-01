@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-TW">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,400i,600,700|Montserrat:300,400,700|Caveat+Brush&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<!-- Bootstrap Switch CSS -->
+	<link rel="stylesheet" href="css/components/bs-switches.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+ 
+
+	<!-- tittle icon -->
+	<link rel="icon" href="./uploads/feature/squarelogo.png" type="image/x-icon">
+	<!-- Document Title
+	============================================= -->
+	<title>驗證</title>
+
+</head>
+
+<body class="stretched">
+	<div class="bg-color2"></div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<header id="header" class="no-sticky transparent-header dark header-size-md" data-sticky-shrink="false">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row justify-content-lg-between">
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-lg-0">
+							<button onclick="history.back();" class="btn btn-lg btn-link"><i class="icon-line-chevron-left text-white" style="font-size: 28px;"></i></button> 輸入購票代碼
+						</div><!-- #logo end -->
+
+						<nav class="primary-menu">
+
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="slider" class="slider-element include-header">
+
+			<div class="row align-items-stretch g-0 min-vh-100">
+				<div class="col-md-12 order-md-last">
+					<div class="vertical-middle px-lg-6 form-widget" data-loader="button">
+						<div class="p-5 text-center">
+							<h3 class="text-white">請輸入購票代碼</h3>
+							<form class="vari-inputs col-md-5 mx-auto mb-5 d-flex justify-content-center align-items-center" data-group-name="digits" data-autosubmit="true" autocomplete="off">
+								<input class="form-control required bg-transparent text-white text-center rounded-5 mx-1" type="text" id="digit-1" name="digit-1" data-next="digit-2" autofocus/>
+								<input class="form-control required bg-transparent text-white text-center rounded-5 mx-1" type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1"/>
+								<div class="text-white">-</div>
+								<input class="form-control required bg-transparent text-white text-center rounded-5 mx-1" type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2"/>
+								<input class="form-control required bg-transparent text-white text-center rounded-5 mx-1" type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3"/>
+								<input class="form-control required bg-transparent text-white text-center rounded-5 mx-1" type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4"/>
+								<input class="form-control required bg-transparent text-white text-center rounded-5 mx-1" type="text" id="digit-6" name="digit-6" data-previous="digit-5"/>
+							</form>
+
+
+							<div class="form-result text-white d-none">驗證錯誤!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!-- #slider end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+	<script type="text/javascript">
+		
+		function check_code(){
+			var code = '';
+			var code_json = [{code:"sa4323"},];
+
+			$('.vari-inputs').find('input').each(function() {
+				code+=this.value;
+			});
+
+			for(var i=0;i<code_json.length;i++){
+			   if(code_json[i].code == code.toLowerCase()){
+			   	location.href = 'live.html';
+				$('.form-result').addClass('d-none');
+			    return true;
+			   }
+			}
+			return false;
+		}
+
+		$('#slider').click(function(e) {
+			// alert("hah");
+			location.href = "live.html";
+		});
+
+		$('.vari-inputs').find('input').each(function() {
+			$(this).attr('maxlength', 1);
+			$(this).on('keyup', function(e) {
+				$(this).val($(this).val().toUpperCase());
+				var parent = $($(this).parent());
+				
+				if(e.keyCode === 8 || e.keyCode === 37) {
+					var prev = parent.find('input#' + $(this).data('previous'));
+					
+					if(prev.length) {
+						$(prev).select();
+					}
+				} else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+					var next = parent.find('input#' + $(this).data('next'));
+					
+					if(next.length) {
+						$(next).select();
+					} else {
+						if(parent.data('autosubmit')) {
+							// parent.submit();
+							if(check_code()){
+
+							}else{
+								$('.form-result').removeClass('d-none');
+							}
+						}
+					}
+				}
+			});
+		});
+	</script>
+
+
+</body>
+</html>

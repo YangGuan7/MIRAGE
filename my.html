@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-TW">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,400i,600,700|Montserrat:300,400,700|Caveat+Brush&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" type="text/css" />
+
+	<!-- Bootstrap Switch CSS -->
+	<link rel="stylesheet" href="css/components/bs-switches.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+	<!-- tittle icon -->
+	<link rel="icon" href="./uploads/feature/squarelogo.png" type="image/x-icon">
+	<!-- Document Title
+	============================================= -->
+	<title>個人資料</title>
+
+</head>
+
+<body class="stretched">
+	<div class="bg-color2"></div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<header id="header" class="no-sticky transparent-header dark header-size-md">
+			<div id="header-wrap">
+				<div class="p-0 m-0 px-5">
+					<div class="header-row justify-content-lg-between">
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-lg-0">
+							<button onclick="history.back();" class="btn btn-lg btn-link"><i class="icon-line-chevron-left text-white" style="font-size: 28px;"></i></button><span>個人資料</span>
+						</div><!-- #logo end -->
+
+						<nav class="primary-menu">
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="include-header">
+			<div class="content-wrap py-0" style="overflow: visible;">
+				<div class="clearfix p-0 m-0">
+					<div class="row align-items-stretch g-0 min-vh-100 tabs tabs-bb clearfix m-0">
+
+						<div class="col-md-4 dark my-page">
+							<div class="my-left d-flex justify-content-start align-items-center h-100 px-5">
+								<ul class="iconlist mb-0" style="width: 100%;">
+									<li class="mb-4 py-2 px-4 rounded-pill"><a class="d-flex justify-content-between" href="#tabs-myinfo"><h4 class="m-0"><i class="icon-user-circle1"></i> 個人資料</h4><span class="ms-6"><i class="icon-line-chevron-right"></i></span></a></li>
+									<li class="mb-4 py-2 px-4 rounded-pill"><a class="d-flex justify-content-between" href="#tabs-schedule"><h4 class="m-0"><i class="icon-list-alt2"></i> 演唱會排程</h4><span class="ms-6"><i class="icon-line-chevron-right"></i></span></a></li>
+									<li class="mb-4 py-2 px-4 rounded-pill"><a class="d-flex justify-content-between" href="#tabs-payments"><h4 class="m-0"><i class="icon-money-check"></i> 付款資訊</h4><span class="ms-6"><i class="icon-line-chevron-right"></i></span></a></li>
+									<li class="mb-4 py-2 px-4 rounded-pill"><a class="d-flex justify-content-between" href="#tabs-settings"><h4 class="m-0"><i class="icon-line2-settings"></i> 設定</h4><span class="ms-6"><i class="icon-line-chevron-right"></i></span></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="tab-container col-md-8 order-md-last p-0">
+
+									<!-- Tab Content 1
+									============================================= -->
+									<div class="tab-content vh-100 clearfix" id="tabs-myinfo">
+										<div class="vertical-middle px-lg-6 form-widget" data-loader="button">
+											<div class="p-5 text-center">
+												<img class="rounded-circle mb-3" src="uploads/users/001/profile.jpg" width="150" alt="User">
+												<div class="form-result"></div>
+												<form class="mb-0" id="from" name="from" action="" method="post" enctype="multipart/form-data">
+													<div class="form-process">
+														<div class="css3-spinner">
+															<div class="css3-spinner-scaler"></div>
+														</div>
+													</div>
+
+													<div class="row">
+														<div class="col-md-8 mx-auto mb-5 d-flex justify-content-between username">
+															<input type="text" name="floating-contact-name" class="form-control required valid bg-transparent text-white text-center rounded-pill mx-5" value="moira" placeholder="輸入你的名字">
+															<span class="input-group-text bg-transparent text-white rounded-pill"><a href="#"><i class="icon-pencil2 text-white"></i></a></span>
+														</div>
+														<div class="col-md-12 mx-auto mb-5 d-flex justify-content-between align-items-center">
+															<div><img width="80" src="uploads/users/001/g1.png" ></div>
+															<div><img width="80" src="uploads/users/001/g2.png" ></div>
+															<div><img width="80" src="uploads/users/001/g3.png" ></div>
+															<div><img height="80" src="uploads/users/001/g4.png" ></div>
+															<div><img width="80" src="uploads/users/001/g5.png" ></div>
+														</div>
+														<div class="input-group mb-3">
+															<span class="input-group-text bg-transparent text-white rounded-end rounded-pill"><i class="icon-user-alt me-2"></i> 帳號</span>
+															<input type="email" name="floating-contact-name" class="form-control required valid bg-transparent text-white rounded-start rounded-pill" value="moira@example.com" placeholder="輸入你的帳號">
+														</div>
+														<div class="input-group mb-3">
+															<span class="input-group-text bg-transparent text-white rounded-end rounded-pill"><i class="icon-key me-2"></i> 密碼</span>
+															<input type="password" name="floating-contact-name" class="form-control required valid bg-transparent text-white rounded-start rounded-pill" value="123" placeholder="輸入你的密碼">
+														</div>
+													</div>
+
+												</form>
+											</div>
+										</div>
+									</div>
+
+									<!-- Tab Content 2
+									============================================= -->
+									<div class="tab-content vh-100 clearfix disabled-scrollbar" id="tabs-schedule" style="overflow-y:scroll;">
+										<div class="vertical-middle px-lg-2 form-widget" data-loader="button">
+											<div class="p-5">
+												<div class="fancy-title title-border title-left dark">
+													<h4>近期開演</h4>
+												</div>
+												<div class="schedule-list-item col-md-12 border border-light dark p-3 rounded-6 mb-3">
+													<div class="grid-inner row">
+														<div class="col-md-5">
+															<div>
+																<img class="rounded-6" src="uploads/feature/你要不要吃哈密瓜.png">
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="entry-title title-sm">
+																<h2>你要不要吃哈密瓜</h2>
+															</div>
+															<div class="entry-meta">
+																<ul class="d-block">
+																	<li><i class="icon-user2"></i> 告五人</li>
+																	<li><i class="icon-calendar-alt"></i> 2022.06.04 (六)</li>
+																	<li><i class="icon-time"></i> 17:30 台灣時間</li>
+																</ul>
+															</div>
+														</div>
+														<div class="col-md-1 d-flex justify-content-center align-items-center">
+															<div>
+																<button class="btn btn-link toggle-reminder"><i class="bi-alarm-fill display-2 text-white"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="schedule-list-item col-md-12 border border-light dark p-3 rounded-6 mb-3">
+													<div class="grid-inner row">
+														<div class="col-md-5">
+															<div>
+																<img class="rounded-6" src="uploads/feature/法蘭西多士.png">
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="entry-title title-sm">
+																<h2>法蘭西多士</h2>
+															</div>
+															<div class="entry-meta">
+																<ul class="d-block">
+																	<li><i class="icon-user2"></i> 告五人</li>
+																	<li><i class="icon-calendar-alt"></i> 2022.06.11 (六)</li>
+																	<li><i class="icon-time"></i> 19:30 台灣時間</li>
+																</ul>
+															</div>
+														</div>
+														<div class="col-md-1 d-flex justify-content-center align-items-center">
+															<div>
+																<button class="btn btn-link toggle-reminder"><i class="bi-alarm display-2 text-white"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="schedule-list-item col-md-12 border border-light dark p-3 rounded-6 mb-3">
+													<div class="grid-inner row">
+														<div class="col-md-5">
+															<div>
+																<img class="rounded-6" src="uploads/feature/如果我們還在一起.png">
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="entry-title title-sm">
+																<h2>如果我們還再一起</h2>
+															</div>
+															<div class="entry-meta">
+																<ul class="d-block">
+																	<li><i class="icon-user2"></i> 宇宙人</li>
+																	<li><i class="icon-calendar-alt"></i> 2022.06.17 (五)</li>
+																	<li><i class="icon-time"></i> 14:00 台灣時間</li>
+																</ul>
+															</div>
+														</div>
+														<div class="col-md-1 d-flex justify-content-center align-items-center">
+															<div>
+																<button class="btn btn-link toggle-reminder"><i class="bi-alarm display-2 text-white"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="fancy-title title-border title-left dark topmargin-lg">
+													<h4>歷史紀錄</h4>
+												</div>
+												<div class="schedule-list-item col-md-12 border border-light dark p-3 rounded-6 mb-3">
+													<div class="grid-inner row">
+														<div class="col-md-5">
+															<div>
+																<img class="rounded-6" src="uploads/feature/愛人錯過.png">
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="entry-title title-sm">
+																<h2>愛人錯過</h2>
+															</div>
+															<div class="entry-meta">
+																<ul class="d-block">
+																	<li><i class="icon-user2"></i> 告五人</li>
+																	<li><i class="icon-calendar-alt"></i> 2021.07.07 (四)</li>
+																	<li><i class="icon-time"></i> 19:00 台灣時間</li>
+																</ul>
+															</div>
+														</div>
+
+														<div class="col-md-1 d-flex justify-content-center align-items-center">
+															<div>
+																<button class="btn btn-link delete-reminder"><i class="bi-trash display-2 text-white"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="schedule-list-item col-md-12 border border-light dark p-3 rounded-6 mb-3">
+													<div class="grid-inner row">
+														<div class="col-md-5">
+															<div>
+																<img class="rounded-6" src="uploads/feature/那你呢.png">
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="entry-title title-sm">
+																<h2>那你呢</h2>
+															</div>
+															<div class="entry-meta">
+																<ul class="d-block">
+																	<li><i class="icon-user2"></i> 宇宙人</li>
+																	<li><i class="icon-calendar-alt"></i> 2021.07.25 (一)</li>
+																	<li><i class="icon-time"></i> 14:00 台灣時間</li>
+																</ul>
+															</div>
+														</div>
+														<div class="col-md-1 d-flex justify-content-center align-items-center">
+															<div>
+																<button class="btn btn-link delete-reminder"><i class="bi-trash display-2 text-white"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="schedule-list-item col-md-12 border border-light dark p-3 rounded-6 mb-3">
+													<div class="grid-inner row">
+														<div class="col-md-5">
+															<div>
+																<img class="rounded-6" src="uploads/feature/YEAR.png">
+															</div>
+														</div>
+														<div class="col-md-6">
+															<div class="entry-title title-sm">
+																<h2>YEAR OF FATE</h2>
+															</div>
+															<div class="entry-meta">
+																<ul class="d-block">
+																	<li><i class="icon-user2"></i> TAKASHI </li>
+																	<li><i class="icon-calendar-alt"></i> 2021.11.30 (五)</li>
+																	<li><i class="icon-time"></i> 17:30 台灣時間</li>
+																</ul>
+															</div>
+														</div>
+														<div class="col-md-1 d-flex justify-content-center align-items-center">
+															<div>
+																<button class="btn btn-link delete-reminder"><i class="bi-trash display-2 text-white"></i></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Tab Content 3
+									============================================= -->
+									<div class="tab-content vh-100 clearfix" id="tabs-payments">
+										<div class="vertical-middle form-widget" data-loader="button">
+											<div class="py-5 text-center dark">
+												<div class="col-md-7 col-xxl-5 vh-25 d-flex justify-content-center align-items-center border border-light rounded-6 mx-auto add-card d-none" onclick="show_add_card_info();">
+													<div>
+														<i class="icon-plus display-6"></i>
+														<p class="mt-2 mb-0">新增信用卡或金融卡</p>
+													</div>
+												</div>
+
+												<div class="add-card-info px-lg-6 d-none">
+													<div class="input-group mb-3">
+															<span class="input-group-text bg-transparent text-white d-block text-end rounded-end rounded-pill" style="min-width:90px;">姓名</span>
+															<input type="text" class="form-control required valid bg-transparent text-white rounded-start rounded-pill" placeholder="輸入你的姓名">
+													</div>
+													<div class="input-group mb-3">
+														<span class="input-group-text bg-transparent text-white d-block text-end rounded-end rounded-pill" style="min-width:90px">卡號</span>
+														<input type="text" id="cardnumber" name="cardnumber" class="form-control required valid bg-transparent text-white rounded-start rounded-pill" placeholder="輸入卡號碼">
+													</div>
+													<div class="input-group mb-3">
+														<span class="input-group-text bg-transparent text-white d-block text-end rounded-end rounded-pill" style="min-width:90px">到期日期</span>
+														<input type="text" id="validdate" name="validdate" class="form-control required valid bg-transparent text-white rounded-start rounded-pill" placeholder="MM/YYYY">
+													</div>
+													<div class="input-group mb-3">
+														<span class="input-group-text bg-transparent text-white d-block text-end rounded-end rounded-pill" style="min-width:90px">安全碼</span>
+														<input type="password" id="cvv" name="cvv" class="form-control required valid bg-transparent rounded-start rounded-pill" maxlength="3">
+													</div>
+													<div>
+														<button class="btn btn-outline-light rounded-pill col-md-3 py-2 px-4" onclick="show_add_card()">
+															取消
+														</button>
+														<button type="submit" class="btn btn-outline-light rounded-pill col-md-3 py-2 px-4" onclick="show_add_card_carousel()">
+															儲存
+														</button>
+													</div>
+												</div>
+												<div class="card-carousel owl-carousel owl-carousel2 carousel-widget topmargin-sm " >
+
+													<div class="oc-item">
+														<div class="d-flex bg-dark h-100 justify-content-between rounded-6">
+															<div class="d-flex align-items-start flex-column h-100 px-4">
+															  <div class="mb-auto p-2 bd-highlight pt-4"><h1>Bank</h1></div>
+															  <div class="mb-auto"><i class="bi-grid-1x2 display-3 px-4"></i></div>
+															  <div class="text-start pb-4">
+																	<p class="mt-2 mb-0">**** **** **** 1234</p>
+																	<p class="mt-2 mb-0">07/25</p>
+																	<p class="mt-2 mb-0">YANG HUI GUAN</p>
+															  </div>
+															</div>
+															<div class="d-flex align-items-end flex-column h-100 px-4">
+															  <div class="bg-overlay-floating-new"><span class="display-1-5">預設</span></div>
+															  <div class="p-2 mt-auto"><i class="icon-wifi-full display-5" style="transform: rotate(90deg);"></i></div>
+															  <div class="text-end mt-auto">
+																	<i class="icon-cc-mastercard display-1"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- Carousel Items
+													============================================= -->
+													<div class="oc-item">
+														<div class="d-block border border-light h-100 rounded-6">
+															<div class="col-md-7 col-xxl-5 h-100 d-flex justify-content-center align-items-center mx-auto" onclick="show_add_card_info();" style="cursor:pointer">
+																<div>
+																	<i class="icon-plus display-6"></i>
+																	<p class="mt-2 mb-0">新增信用卡或金融卡</p>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Tab Content 4
+									============================================= -->
+									<div class="tab-content vh-100 clearfix" id="tabs-settings">
+										<div class="vertical-middle px-lg-6 form-widget" data-loader="button">
+											<div class="p-5 text-center dark">
+												<div class="bottommargin">
+													<button class="btn btn-outline-light rounded-pill col-md-12 d-flex justify-content-between display-1-5 py-2 px-4">
+														<span><i class="icon-line-info me-3" style="min-width:20px"></i> 關於本機</span> 
+														<span class="ms-6"><i class="icon-line-chevron-right"></i></span>
+													</button>
+												</div>
+												<div class="bottommargin">
+													<button class="btn btn-outline-light rounded-pill col-md-12 d-flex justify-content-between display-1-5 py-2 px-4 mb-3">
+														<span><i class="icon-language me-3" style="min-width:20px"></i> 語言地區</span> 
+														<span class="ms-6"><i class="icon-line-chevron-right"></i></span>
+													</button>
+													<button class="btn btn-outline-light rounded-pill col-md-12 d-flex justify-content-between display-1-5 py-2 px-4 mb-3">
+														<span><i class="icon-calendar-empty me-3" style="min-width:20px"></i> 日期與時間</span> 
+														<span class="ms-6"><i class="icon-line-chevron-right"></i></span>
+													</button>
+													<button class="btn btn-outline-light rounded-pill col-md-12 d-flex justify-content-between display-1-5 py-2 px-4 mb-3">
+														<span><i class="icon-line-bell me-3" style="min-width:20px"></i> 提醒設定</span> 
+														<span class="ms-6"><i class="icon-line-chevron-right"></i></span>
+													</button>
+													<button class="btn btn-outline-light rounded-pill col-md-12 d-flex justify-content-between display-1-5 py-2 px-4">
+														<span><i class="icon-bluetooth me-3" style="min-width:20px"></i> AR眼鏡連接</span> 
+														<span class="ms-6"><i class="icon-line-chevron-right"></i></span>
+													</button>
+												</div>
+												<div class="bottommargin">
+													<a href="miragevideos.html">
+														<button class="btn btn-outline-light rounded-pill col-md-12 d-flex justify-content-between display-1-5 py-2 px-4 mb-3">
+														<span><i class="icon-line-info me-3" style="min-width:20px"></i> 隱私</span> 
+														<span class="ms-6"><i class="icon-line-chevron-right"></i></span>
+													</button>
+												</a>
+												<a href="schoolvideos.html"><button class="btn btn-outline-light rounded-pill col-md-12 d-flex justify-content-between display-1-5 py-2 px-4">
+														<span><i class="icon-line-info me-3" style="min-width:20px"></i> 管理儲存空間</span> 
+														<span class="ms-6"><i class="icon-line-chevron-right"></i></span>
+													</button>
+												</div></a>
+
+												<div class="bottommargin">
+													<a href="login.html" class="btn btn-outline-light rounded-pill col-md-12 d-flex justify-content-between display-1-5 py-2 px-4">
+														<span><i class="icon-line2-logout me-3" style="min-width:20px"></i> 登出</span> 
+														<span class="ms-6"><i class="icon-line-chevron-right"></i></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!-- #slider end -->
+
+	</div><!-- #wrapper end -->
+
+	<div class="modal fade bs-example-modal-fs" tabindex="-1" role="dialog" aria-labelledby="fsModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-body p-0">
+						
+						<div class="bg-color2"></div>
+						<section class="col-md-12 vh-100">
+							<div class="h-100 bg-transparent d-flex align-items-center justify-content-center">
+								<div class="container">
+									<div class="row dark text-center">
+										<h2>已將提醒匯入手機行事曆</h2>
+										<p class="mb-1">將於2021.02.26（五）台灣時間13:00</p>
+										<p>提醒收看</p>
+									</div>
+									<div class="row d-flex justify-content-evenly dark">
+										<button class="btn btn-light col-md-2 mb-5 py-3 px-4 rounded-pill" data-bs-dismiss="modal" aria-hidden="true">
+											確定
+										</button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+	<script type="text/javascript">
+		$('.owl-carousel2').owlCarousel({
+			    margin:20,
+			    center: true,
+			    loop:false,
+			    dots:false,
+			    autoWidth:true,
+			    items:1,
+
+		});
+
+		function show_add_card(){
+			$(".add-card").removeClass("d-none");
+		   	$(".add-card-info").addClass("d-none");
+		   	$(".card-carousel").addClass("d-none");
+		}
+
+		function show_add_card_info(){
+			$(".add-card").addClass("d-none");
+		   	$(".add-card-info").removeClass("d-none");
+		   	$(".card-carousel").addClass("d-none");
+		}
+
+		function show_add_card_carousel(){
+			$(".add-card").addClass("d-none");
+		   	$(".add-card-info").addClass("d-none");
+		   	$(".card-carousel").removeClass("d-none");
+		}
+
+		$(function(){
+			$("#cardnumber").mask("0000-0000-0000-0000")
+			$('#validdate').mask('00/0000');
+			$(".toggle-reminder").click(function(e){
+		     	if($(this).find('i.bi-alarm-fill').length !== 0){
+		     		$(this).find('i.bi-alarm-fill').removeClass('bi-alarm-fill').addClass('bi-alarm');
+		     	}else if($(this).find('i.bi-alarm').length !== 0){
+		     		$(this).find('i.bi-alarm').removeClass('bi-alarm').addClass('bi-alarm-fill');
+		     		$('.bs-example-modal-fs').modal('show');
+		     	}
+		     	e.preventDefault();   
+		   	});
+
+		   	$(".delete-reminder").click(function(e) {
+		   		$(this).closest(".schedule-list-item ").remove();
+		   	});
+		 });
+	</script>
+
+
+</body>
+</html>
